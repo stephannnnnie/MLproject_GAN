@@ -7,7 +7,7 @@ November 10, 2021
 ## Introduction
 
 ​	  As a popular hot-spot issue, the lack of training data for self-driving cars or autonomous cars is a tough problem. With such problems, much research has been conducted on data argumentation, among which GAN is an ideal method to generate a bunch of proper datasets in many situations according to limited images.  
-     
+​     
 ​	  ​Based on the guided essays, we attempted to implement the UNIT model, which is an unsupervised Image-to-Image translation network. The model aims to learn the joint distribution of images in different domains by using images from the marginal distributions in individual domains. However, we identified that there are still some areas that require further attention. Firstly, we can broaden the application aspects of the models. Secondly, we were inspired by starGAN to make our training multi-domain to increase efficiency. Thirdly, we still seek to generate more precise and realistic images, and we are exploring appropriate methods to achieve this goal.
 
 ​	  Our team comprises Dengheng Shi, Yilin Hou, Tongshu Pang and Chenlu Huang.
@@ -36,5 +36,3 @@ November 10, 2021
 [1] Uřičář, Michal, Křížek, Pavel,  Hurych, D. ,  Sobh, I. ,  Yogamani, S. , &  Denny, P. . (2019). Yes, we gan: applying adversarial techniques for autonomous driving. Electronic Imaging.
 
 [2] Choi, Y. ,  Choi, M. ,  Kim, M. ,  Ha, J. W. , &  Choo, J. . Stargan: unified generative adversarial networks for multi-domain image-to-image translation.
-
-
