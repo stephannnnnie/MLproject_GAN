@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # GAN for self-driving data argumentation
 
 #### This is the final project of the CS 405: Machine Learning
@@ -39,9 +38,3 @@ November 10, 2021
 [2] Choi, Y. ,  Choi, M. ,  Kim, M. ,  Ha, J. W. , &  Choo, J. . Stargan: unified generative adversarial networks for multi-domain image-to-image translation.
 
 
-
-
-=======
-# MLproject_GAN
-This is the final project of machine learning mainly studying different types of GAN and mixed framework.
->>>>>>> origin/branch3
