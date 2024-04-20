@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # GAN for self-driving data argumentation
 
 #### This is the final project of the CS 405: Machine Learning
@@ -40,3 +41,7 @@ November 10, 2021
 
 
 
+=======
+# MLproject_GAN
+This is the final project of machine learning mainly studying different types of GAN and mixed framework.
+>>>>>>> origin/branch3
