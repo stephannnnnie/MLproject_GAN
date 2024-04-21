@@ -38,7 +38,33 @@ November 10, 2021
 
 ![image-20211118004649129](https://github.com/stephannnnnie/MLproject_GAN/assets/71458749/f970f128-58b0-4e8c-b4fd-495ca5c6004a)
 
+## Result
+### starGAN
+#####  Initial result on CelebA Dataset
 
+We retrained the model on total iteration = 20000
+
+(Origin image, black hair, gold hair, brown hair, male, old)
+
+![image-20220108164432475](https://github.com/stephannnnnie/MLproject_GAN/assets/71458749/48c3f931-19dd-42af-826d-30654c07d14b)
+
+##### Training process on our new dataset
+
+- Iteration = 1000
+
+<img src="https://github.com/stephannnnnie/MLproject_GAN/assets/71458749/1cece0f6-936f-40e0-bedc-e726f2be40a8" alt="image-20220108165007945" style="zoom:300%;" />
+
+- Iteration = 7000
+
+![image-20220109195523167-16417293272405](https://github.com/stephannnnnie/MLproject_GAN/assets/71458749/efffe618-ed3b-416d-9e68-9082cbb9decb)
+
+- Iteration = 14000
+  
+![image-20220109195549748-16417293527236](https://github.com/stephannnnnie/MLproject_GAN/assets/71458749/58f68fd8-76b9-4e85-bc9c-23c7caa12e33)
+
+##### Final results
+
+![image-20220109195622185-16417293860927](https://github.com/stephannnnnie/MLproject_GAN/assets/71458749/53ce2d47-3d79-444c-bf60-38fdf628c8b8)
 
 ## Reference
 
