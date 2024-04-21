@@ -39,7 +39,7 @@ November 10, 2021
 ![image-20211118004649129](https://github.com/stephannnnnie/MLproject_GAN/assets/71458749/f970f128-58b0-4e8c-b4fd-495ca5c6004a)
 
 ## Result
-### starGAN
+### 1. starGAN
 #####  Initial result on CelebA Dataset
 
 We retrained the model on total iteration = 20000
@@ -65,6 +65,19 @@ We retrained the model on total iteration = 20000
 ##### Final results
 
 ![image-20220109195622185-16417293860927](https://github.com/stephannnnnie/MLproject_GAN/assets/71458749/53ce2d47-3d79-444c-bf60-38fdf628c8b8)
+
+### 2. cGAN
+##### some interesting sample of output
+
+![cgan_samples](https://github.com/stephannnnnie/MLproject_GAN/assets/71458749/8f533e31-d248-4c70-8e68-15ee0bb68e69)
+
+### 3. vaeGAN
+##### turning out school bus into gta style!
+
+Retraining model city2gta and applying on our video and this is one frame of our video:
+
+![video-frame](https://github.com/stephannnnnie/MLproject_GAN/assets/71458749/59cd73a0-f1c6-4415-ba2f-b19732812532)
+
 
 ## Reference
 
