@@ -6,9 +6,9 @@ November 10, 2021
 
 ## Introduction
 
-​	  As a popular hot-spot issue, the lack of training data for self-driving cars or autonomous cars is a tough problem. With such problems, much research has been conducted on data argumentation, among which GAN is an ideal method to generate a bunch of proper datasets in many situations according to limited images.  
-​     
-​	  ​Based on the guided essays, we attempted to implement the UNIT model, which is an unsupervised Image-to-Image translation network. The model aims to learn the joint distribution of images in different domains by using images from the marginal distributions in individual domains. However, we identified that there are still some areas that require further attention. Firstly, we can broaden the application aspects of the models. Secondly, we were inspired by starGAN to make our training multi-domain to increase efficiency. Thirdly, we still seek to generate more precise and realistic images, and we are exploring appropriate methods to achieve this goal.
+​	  As a popular hot-spot issue, the lack of training data for self-driving or autonomous cars is a tough problem. Facing such problems, much research has been conducted on data argumentation, among which GAN is an ideal method to generate a bunch of proper datasets in many situations according to limited images. 
+
+​	In this project, we first do a lot of research on GAN, and we choose VAE-GAN, cGAN, and Star-GAN to conduct a deeper study. Finally, we successfully implement the above three models and  apply them to our dataset. In addition, we are trying to combine the VAE-GAN model and the Star-GAN model so that designing a model has the advantages of both the VAE-GAN and Star-GAN.
 
 ​	  Our team comprises Dengheng Shi, Yilin Hou, Tongshu Pang and Chenlu Huang.
 
@@ -24,11 +24,59 @@ November 10, 2021
 
 ## Research goals
 
-1. In the baseline of the code UNIT: Unsupervised Image-to-Image Translation, the images of  different seasons and different time in a day are generated. We hope we can create more similar images in other circumstances, which might be rare for now. For example, the situation of extreme weather------ drought, hurricane, rainstorm, frost. Or the situation of coming across crowds, children, animals...
-   
-2. What we want to achieve also consists of generating more precise and realistic images for AD system. The images generated now might be not so precise when the situation is complicated. For example, the reconstruction of traffic sign might not be clear and the  poles on the side of the street might be curved. Here is an example comparison of original generation and the expected images. In the final generated images, there are many details updated and except some little distortion on the lines, the images are relatively clear.
+* In the baseline of the code UNIT: Unsupervised Image-to-Image Translation, the images of  different seasons and different time in a day are generated. We hope we can create more similar images in other circumstances, which might be rare for now. For example, the situation of extreme weather------ drought, hurricane, rainstorm, frost. Or the situation of coming across crowds, children, animals... 
 
-3. Last but not least, we hope we can use better models for increasing the efficiency of training. In detail, it's expected to get more types of images during the same training time for the model.  We are now inspired by a model called starGAN. To handle multiple domains, cross-domain models should be built for every pair of image domains. StarGAN is capable of learning mappings among multiple domains using a single generator[2]. The figure represents a star topology connecting multi-domains. So we can reach a better performance in relatively shorter time than simply use a cross-domain models when we want to generate more images from different aspects.
+![image-20211118003642226](https://github.com/stephannnnnie/MLproject_GAN/assets/71458749/495bbdc4-bd9b-45bf-9207-fc0b22fd30e0)
+
+
+* What we want to achieve also consists of generating more precise and realistic images for AD system. The images generated now might be not so precise when the situation is complicated. For example, the reconstruction of traffic sign might not be clear and the  poles on the side of the street might be curved. Here is an example comparison of original generation and the expected images. In the final generated images, there are many details updated and except some little distortion on the lines, the images are relatively clear. 
+
+![image-20211118004534873](https://github.com/stephannnnnie/MLproject_GAN/assets/71458749/592be7f9-eb51-4a67-8aa7-aa8327dae346)
+
+
+* Last but not least, we hope we can use better models for increasing the efficiency of training. In detail, it's expected to get more types of images during the same training time for the model.  We are now inspired by a model called starGAN. To handle multiple domains, cross-domain models should be built for every pair of image domains. StarGAN is capable of learning mappings among multiple domains using a single generator[2]. The figure represents a star topology connecting multi-domains. So we can reach a better performance in relatively shorter time than simply use a cross-domain models when we want to generate more images from different aspects.
+
+![image-20211118004649129](https://github.com/stephannnnnie/MLproject_GAN/assets/71458749/f970f128-58b0-4e8c-b4fd-495ca5c6004a)
+
+## Result
+### 1. starGAN
+#####  Initial result on CelebA Dataset
+
+We retrained the model on total iteration = 20000
+
+(Origin image, black hair, gold hair, brown hair, male, old)
+
+![image-20220108164432475](https://github.com/stephannnnnie/MLproject_GAN/assets/71458749/48c3f931-19dd-42af-826d-30654c07d14b)
+
+##### Training process on our new dataset
+
+- Iteration = 1000
+
+<img src="https://github.com/stephannnnnie/MLproject_GAN/assets/71458749/1cece0f6-936f-40e0-bedc-e726f2be40a8" alt="image-20220108165007945" width="200%" height="200%" />
+
+- Iteration = 7000
+
+![image-20220109195523167-16417293272405](https://github.com/stephannnnnie/MLproject_GAN/assets/71458749/efffe618-ed3b-416d-9e68-9082cbb9decb)
+
+- Iteration = 14000
+  
+![image-20220109195549748-16417293527236](https://github.com/stephannnnnie/MLproject_GAN/assets/71458749/58f68fd8-76b9-4e85-bc9c-23c7caa12e33)
+
+##### Final results
+
+![image-20220109195622185-16417293860927](https://github.com/stephannnnnie/MLproject_GAN/assets/71458749/53ce2d47-3d79-444c-bf60-38fdf628c8b8)
+
+### 2. cGAN
+##### some interesting sample of output
+
+![cgan_samples](https://github.com/stephannnnnie/MLproject_GAN/assets/71458749/8f533e31-d248-4c70-8e68-15ee0bb68e69)
+
+### 3. vaeGAN
+##### turning out school bus into gta style!
+
+Retraining model city2gta and applying on our video and this is one frame of our video:
+
+![video-frame](https://github.com/stephannnnnie/MLproject_GAN/assets/71458749/59cd73a0-f1c6-4415-ba2f-b19732812532)
 
 
 ## Reference
