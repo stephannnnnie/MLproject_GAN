@@ -52,7 +52,7 @@ We retrained the model on total iteration = 20000
 
 - Iteration = 1000
 
-<img src="https://github.com/stephannnnnie/MLproject_GAN/assets/71458749/1cece0f6-936f-40e0-bedc-e726f2be40a8" alt="image-20220108165007945" style="zoom:300%;" />
+<img src="https://github.com/stephannnnnie/MLproject_GAN/assets/71458749/1cece0f6-936f-40e0-bedc-e726f2be40a8" alt="image-20220108165007945" width="200%" height="200%" />
 
 - Iteration = 7000
 
